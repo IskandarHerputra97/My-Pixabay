@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60849A40249861370027DBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A3F249861370027DBDC /* AppDelegate.swift */; };
+		60849A42249861370027DBDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A41249861370027DBDC /* ViewController.swift */; };
+		60849A45249861370027DBDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60849A43249861370027DBDC /* Main.storyboard */; };
+		60849A48249861370027DBDC /* My_Shutterstock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60849A46249861370027DBDC /* My_Shutterstock.xcdatamodeld */; };
+		60849A4A249861380027DBDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60849A49249861380027DBDC /* Assets.xcassets */; };
+		60849A4D249861380027DBDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60849A4B249861380027DBDC /* LaunchScreen.storyboard */; };
+		60849A58249861380027DBDC /* My_ShutterstockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A57249861380027DBDC /* My_ShutterstockTests.swift */; };
+		60849A63249861380027DBDC /* My_ShutterstockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A62249861380027DBDC /* My_ShutterstockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60849A54249861380027DBDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60849A34249861370027DBDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60849A3B249861370027DBDC;
+			remoteInfo = "My-Shutterstock";
+		};
+		60849A5F249861380027DBDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60849A34249861370027DBDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60849A3B249861370027DBDC;
+			remoteInfo = "My-Shutterstock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		60849A3C249861370027DBDC /* My-Shutterstock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-Shutterstock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60849A3F249861370027DBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60849A41249861370027DBDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60849A44249861370027DBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60849A47249861370027DBDC /* My_Shutterstock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Shutterstock.xcdatamodel; sourceTree = "<group>"; };
+		60849A49249861380027DBDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60849A4C249861380027DBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60849A4E249861380027DBDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60849A53249861380027DBDC /* My-ShutterstockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My-ShutterstockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60849A57249861380027DBDC /* My_ShutterstockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ShutterstockTests.swift; sourceTree = "<group>"; };
+		60849A59249861380027DBDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60849A5E249861380027DBDC /* My-ShutterstockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My-ShutterstockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60849A62249861380027DBDC /* My_ShutterstockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ShutterstockUITests.swift; sourceTree = "<group>"; };
+		60849A64249861380027DBDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60849A39249861370027DBDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60849A50249861380027DBDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60849A5B249861380027DBDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60849A33249861370027DBDC = {
+			isa = PBXGroup;
+			children = (
+				60849A3E249861370027DBDC /* My-Shutterstock */,
+				60849A56249861380027DBDC /* My-ShutterstockTests */,
+				60849A61249861380027DBDC /* My-ShutterstockUITests */,
+				60849A3D249861370027DBDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60849A3D249861370027DBDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60849A3C249861370027DBDC /* My-Shutterstock.app */,
+				60849A53249861380027DBDC /* My-ShutterstockTests.xctest */,
+				60849A5E249861380027DBDC /* My-ShutterstockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60849A3E249861370027DBDC /* My-Shutterstock */ = {
+			isa = PBXGroup;
+			children = (
+				60849A3F249861370027DBDC /* AppDelegate.swift */,
+				60849A41249861370027DBDC /* ViewController.swift */,
+				60849A43249861370027DBDC /* Main.storyboard */,
+				60849A49249861380027DBDC /* Assets.xcassets */,
+				60849A4B249861380027DBDC /* LaunchScreen.storyboard */,
+				60849A4E249861380027DBDC /* Info.plist */,
+				60849A46249861370027DBDC /* My_Shutterstock.xcdatamodeld */,
+			);
+			path = "My-Shutterstock";
+			sourceTree = "<group>";
+		};
+		60849A56249861380027DBDC /* My-ShutterstockTests */ = {
+			isa = PBXGroup;
+			children = (
+				60849A57249861380027DBDC /* My_ShutterstockTests.swift */,
+				60849A59249861380027DBDC /* Info.plist */,
+			);
+			path = "My-ShutterstockTests";
+			sourceTree = "<group>";
+		};
+		60849A61249861380027DBDC /* My-ShutterstockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				60849A62249861380027DBDC /* My_ShutterstockUITests.swift */,
+				60849A64249861380027DBDC /* Info.plist */,
+			);
+			path = "My-ShutterstockUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60849A3B249861370027DBDC /* My-Shutterstock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60849A67249861380027DBDC /* Build configuration list for PBXNativeTarget "My-Shutterstock" */;
+			buildPhases = (
+				60849A38249861370027DBDC /* Sources */,
+				60849A39249861370027DBDC /* Frameworks */,
+				60849A3A249861370027DBDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My-Shutterstock";
+			productName = "My-Shutterstock";
+			productReference = 60849A3C249861370027DBDC /* My-Shutterstock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60849A52249861380027DBDC /* My-ShutterstockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60849A6A249861380027DBDC /* Build configuration list for PBXNativeTarget "My-ShutterstockTests" */;
+			buildPhases = (
+				60849A4F249861380027DBDC /* Sources */,
+				60849A50249861380027DBDC /* Frameworks */,
+				60849A51249861380027DBDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60849A55249861380027DBDC /* PBXTargetDependency */,
+			);
+			name = "My-ShutterstockTests";
+			productName = "My-ShutterstockTests";
+			productReference = 60849A53249861380027DBDC /* My-ShutterstockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60849A5D249861380027DBDC /* My-ShutterstockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60849A6D249861380027DBDC /* Build configuration list for PBXNativeTarget "My-ShutterstockUITests" */;
+			buildPhases = (
+				60849A5A249861380027DBDC /* Sources */,
+				60849A5B249861380027DBDC /* Frameworks */,
+				60849A5C249861380027DBDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60849A60249861380027DBDC /* PBXTargetDependency */,
+			);
+			name = "My-ShutterstockUITests";
+			productName = "My-ShutterstockUITests";
+			productReference = 60849A5E249861380027DBDC /* My-ShutterstockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60849A34249861370027DBDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Iskandar Herputra Wahidiyat";
+				TargetAttributes = {
+					60849A3B249861370027DBDC = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					60849A52249861380027DBDC = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 60849A3B249861370027DBDC;
+					};
+					60849A5D249861380027DBDC = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 60849A3B249861370027DBDC;
+					};
+				};
+			};
+			buildConfigurationList = 60849A37249861370027DBDC /* Build configuration list for PBXProject "My-Shutterstock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60849A33249861370027DBDC;
+			productRefGroup = 60849A3D249861370027DBDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60849A3B249861370027DBDC /* My-Shutterstock */,
+				60849A52249861380027DBDC /* My-ShutterstockTests */,
+				60849A5D249861380027DBDC /* My-ShutterstockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60849A3A249861370027DBDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60849A4D249861380027DBDC /* LaunchScreen.storyboard in Resources */,
+				60849A4A249861380027DBDC /* Assets.xcassets in Resources */,
+				60849A45249861370027DBDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60849A51249861380027DBDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60849A5C249861380027DBDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60849A38249861370027DBDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60849A42249861370027DBDC /* ViewController.swift in Sources */,
+				60849A48249861370027DBDC /* My_Shutterstock.xcdatamodeld in Sources */,
+				60849A40249861370027DBDC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60849A4F249861380027DBDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60849A58249861380027DBDC /* My_ShutterstockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60849A5A249861380027DBDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60849A63249861380027DBDC /* My_ShutterstockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60849A55249861380027DBDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60849A3B249861370027DBDC /* My-Shutterstock */;
+			targetProxy = 60849A54249861380027DBDC /* PBXContainerItemProxy */;
+		};
+		60849A60249861380027DBDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60849A3B249861370027DBDC /* My-Shutterstock */;
+			targetProxy = 60849A5F249861380027DBDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60849A43249861370027DBDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60849A44249861370027DBDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60849A4B249861380027DBDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60849A4C249861380027DBDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60849A65249861380027DBDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60849A66249861380027DBDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60849A68249861380027DBDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = "My-Shutterstock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-Shutterstock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60849A69249861380027DBDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = "My-Shutterstock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-Shutterstock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60849A6B249861380027DBDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = "My-ShutterstockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-ShutterstockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My-Shutterstock.app/My-Shutterstock";
+			};
+			name = Debug;
+		};
+		60849A6C249861380027DBDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = "My-ShutterstockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-ShutterstockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My-Shutterstock.app/My-Shutterstock";
+			};
+			name = Release;
+		};
+		60849A6E249861380027DBDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = "My-ShutterstockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-ShutterstockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My-Shutterstock";
+			};
+			name = Debug;
+		};
+		60849A6F249861380027DBDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT88Q2XM7;
+				INFOPLIST_FILE = "My-ShutterstockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-ShutterstockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My-Shutterstock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60849A37249861370027DBDC /* Build configuration list for PBXProject "My-Shutterstock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60849A65249861380027DBDC /* Debug */,
+				60849A66249861380027DBDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60849A67249861380027DBDC /* Build configuration list for PBXNativeTarget "My-Shutterstock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60849A68249861380027DBDC /* Debug */,
+				60849A69249861380027DBDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60849A6A249861380027DBDC /* Build configuration list for PBXNativeTarget "My-ShutterstockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60849A6B249861380027DBDC /* Debug */,
+				60849A6C249861380027DBDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60849A6D249861380027DBDC /* Build configuration list for PBXNativeTarget "My-ShutterstockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60849A6E249861380027DBDC /* Debug */,
+				60849A6F249861380027DBDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		60849A46249861370027DBDC /* My_Shutterstock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				60849A47249861370027DBDC /* My_Shutterstock.xcdatamodel */,
+			);
+			currentVersion = 60849A47249861370027DBDC /* My_Shutterstock.xcdatamodel */;
+			path = My_Shutterstock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 60849A34249861370027DBDC /* Project object */;
+}
