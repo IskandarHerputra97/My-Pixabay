@@ -65,6 +65,6 @@ class LandingPageViewController: UIViewController {
     //MARK: - ACTIONS
     @objc func startButtonTapped() {
         let viewController = ViewController()
-        navigationController?.pushViewController(viewController, animated: true)
+        navigationController?.setViewControllers([viewController], animated: true)
     }
 }
