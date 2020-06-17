@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  My-Shutterstock
+//  My-Pixabay
 //
 //  Created by Iskandar Herputra Wahidiyat on 16/06/20.
 //  Copyright © 2020 Iskandar Herputra Wahidiyat. All rights reserved.
@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let viewController = ViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
+        let landingPageViewController = LandingPageViewController()
+        let navigationController = UINavigationController(rootViewController: landingPageViewController)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController

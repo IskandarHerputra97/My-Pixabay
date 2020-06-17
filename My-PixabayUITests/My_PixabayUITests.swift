@@ -1,6 +1,6 @@
 //
-//  My_ShutterstockUITests.swift
-//  My-ShutterstockUITests
+//  My_PixabayUITests.swift
+//  My-PixabayUITests
 //
 //  Created by Iskandar Herputra Wahidiyat on 16/06/20.
 //  Copyright © 2020 Iskandar Herputra Wahidiyat. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class My_ShutterstockUITests: XCTestCase {
+class My_PixabayUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

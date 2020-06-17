@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		60849A40249861370027DBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A3F249861370027DBDC /* AppDelegate.swift */; };
 		60849A42249861370027DBDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A41249861370027DBDC /* ViewController.swift */; };
-		60849A48249861370027DBDC /* My_Shutterstock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60849A46249861370027DBDC /* My_Shutterstock.xcdatamodeld */; };
+		60849A48249861370027DBDC /* My_Pixabay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60849A46249861370027DBDC /* My_Pixabay.xcdatamodeld */; };
 		60849A4A249861380027DBDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60849A49249861380027DBDC /* Assets.xcassets */; };
 		60849A4D249861380027DBDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60849A4B249861380027DBDC /* LaunchScreen.storyboard */; };
-		60849A58249861380027DBDC /* My_ShutterstockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A57249861380027DBDC /* My_ShutterstockTests.swift */; };
-		60849A63249861380027DBDC /* My_ShutterstockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A62249861380027DBDC /* My_ShutterstockUITests.swift */; };
+		60849A58249861380027DBDC /* My_PixabayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A57249861380027DBDC /* My_PixabayTests.swift */; };
+		60849A63249861380027DBDC /* My_PixabayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A62249861380027DBDC /* My_PixabayUITests.swift */; };
+		60849A722498A25B0027DBDC /* Pixabay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A712498A25B0027DBDC /* Pixabay.swift */; };
+		60849A762499C8C90027DBDC /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A752499C8C80027DBDC /* LandingPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +36,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		60849A3C249861370027DBDC /* My-Shutterstock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-Shutterstock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60849A3C249861370027DBDC /* My-Pixabay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-Pixabay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60849A3F249861370027DBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60849A41249861370027DBDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		60849A47249861370027DBDC /* My_Shutterstock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Shutterstock.xcdatamodel; sourceTree = "<group>"; };
 		60849A49249861380027DBDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60849A4C249861380027DBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60849A4E249861380027DBDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60849A53249861380027DBDC /* My-ShutterstockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My-ShutterstockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		60849A57249861380027DBDC /* My_ShutterstockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ShutterstockTests.swift; sourceTree = "<group>"; };
+		60849A53249861380027DBDC /* My-PixabayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My-PixabayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60849A57249861380027DBDC /* My_PixabayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_PixabayTests.swift; sourceTree = "<group>"; };
 		60849A59249861380027DBDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60849A5E249861380027DBDC /* My-ShutterstockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My-ShutterstockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		60849A62249861380027DBDC /* My_ShutterstockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ShutterstockUITests.swift; sourceTree = "<group>"; };
+		60849A5E249861380027DBDC /* My-PixabayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My-PixabayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60849A62249861380027DBDC /* My_PixabayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_PixabayUITests.swift; sourceTree = "<group>"; };
 		60849A64249861380027DBDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60849A712498A25B0027DBDC /* Pixabay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixabay.swift; sourceTree = "<group>"; };
+		60849A752499C8C80027DBDC /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,9 @@
 		60849A33249861370027DBDC = {
 			isa = PBXGroup;
 			children = (
-				60849A3E249861370027DBDC /* My-Shutterstock */,
-				60849A56249861380027DBDC /* My-ShutterstockTests */,
-				60849A61249861380027DBDC /* My-ShutterstockUITests */,
+				60849A3E249861370027DBDC /* My-Pixabay */,
+				60849A56249861380027DBDC /* My-PixabayTests */,
+				60849A61249861380027DBDC /* My-PixabayUITests */,
 				60849A3D249861370027DBDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,50 +91,60 @@
 		60849A3D249861370027DBDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60849A3C249861370027DBDC /* My-Shutterstock.app */,
-				60849A53249861380027DBDC /* My-ShutterstockTests.xctest */,
-				60849A5E249861380027DBDC /* My-ShutterstockUITests.xctest */,
+				60849A3C249861370027DBDC /* My-Pixabay.app */,
+				60849A53249861380027DBDC /* My-PixabayTests.xctest */,
+				60849A5E249861380027DBDC /* My-PixabayUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60849A3E249861370027DBDC /* My-Shutterstock */ = {
+		60849A3E249861370027DBDC /* My-Pixabay */ = {
 			isa = PBXGroup;
 			children = (
+				60849A702498A18E0027DBDC /* Model */,
 				60849A3F249861370027DBDC /* AppDelegate.swift */,
 				60849A41249861370027DBDC /* ViewController.swift */,
+				60849A752499C8C80027DBDC /* LandingPageViewController.swift */,
 				60849A49249861380027DBDC /* Assets.xcassets */,
 				60849A4B249861380027DBDC /* LaunchScreen.storyboard */,
 				60849A4E249861380027DBDC /* Info.plist */,
-				60849A46249861370027DBDC /* My_Shutterstock.xcdatamodeld */,
+				60849A46249861370027DBDC /* My_Pixabay.xcdatamodeld */,
 			);
-			path = "My-Shutterstock";
+			path = "My-Pixabay";
 			sourceTree = "<group>";
 		};
-		60849A56249861380027DBDC /* My-ShutterstockTests */ = {
+		60849A56249861380027DBDC /* My-PixabayTests */ = {
 			isa = PBXGroup;
 			children = (
-				60849A57249861380027DBDC /* My_ShutterstockTests.swift */,
+				60849A57249861380027DBDC /* My_PixabayTests.swift */,
 				60849A59249861380027DBDC /* Info.plist */,
 			);
-			path = "My-ShutterstockTests";
+			path = "My-PixabayTests";
 			sourceTree = "<group>";
 		};
-		60849A61249861380027DBDC /* My-ShutterstockUITests */ = {
+		60849A61249861380027DBDC /* My-PixabayUITests */ = {
 			isa = PBXGroup;
 			children = (
-				60849A62249861380027DBDC /* My_ShutterstockUITests.swift */,
+				60849A62249861380027DBDC /* My_PixabayUITests.swift */,
 				60849A64249861380027DBDC /* Info.plist */,
 			);
-			path = "My-ShutterstockUITests";
+			path = "My-PixabayUITests";
+			sourceTree = "<group>";
+		};
+		60849A702498A18E0027DBDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60849A712498A25B0027DBDC /* Pixabay.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		60849A3B249861370027DBDC /* My-Shutterstock */ = {
+		60849A3B249861370027DBDC /* My-Pixabay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60849A67249861380027DBDC /* Build configuration list for PBXNativeTarget "My-Shutterstock" */;
+			buildConfigurationList = 60849A67249861380027DBDC /* Build configuration list for PBXNativeTarget "My-Pixabay" */;
 			buildPhases = (
 				60849A38249861370027DBDC /* Sources */,
 				60849A39249861370027DBDC /* Frameworks */,
@@ -140,14 +154,14 @@
 			);
 			dependencies = (
 			);
-			name = "My-Shutterstock";
+			name = "My-Pixabay";
 			productName = "My-Shutterstock";
-			productReference = 60849A3C249861370027DBDC /* My-Shutterstock.app */;
+			productReference = 60849A3C249861370027DBDC /* My-Pixabay.app */;
 			productType = "com.apple.product-type.application";
 		};
-		60849A52249861380027DBDC /* My-ShutterstockTests */ = {
+		60849A52249861380027DBDC /* My-PixabayTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60849A6A249861380027DBDC /* Build configuration list for PBXNativeTarget "My-ShutterstockTests" */;
+			buildConfigurationList = 60849A6A249861380027DBDC /* Build configuration list for PBXNativeTarget "My-PixabayTests" */;
 			buildPhases = (
 				60849A4F249861380027DBDC /* Sources */,
 				60849A50249861380027DBDC /* Frameworks */,
@@ -158,14 +172,14 @@
 			dependencies = (
 				60849A55249861380027DBDC /* PBXTargetDependency */,
 			);
-			name = "My-ShutterstockTests";
+			name = "My-PixabayTests";
 			productName = "My-ShutterstockTests";
-			productReference = 60849A53249861380027DBDC /* My-ShutterstockTests.xctest */;
+			productReference = 60849A53249861380027DBDC /* My-PixabayTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		60849A5D249861380027DBDC /* My-ShutterstockUITests */ = {
+		60849A5D249861380027DBDC /* My-PixabayUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60849A6D249861380027DBDC /* Build configuration list for PBXNativeTarget "My-ShutterstockUITests" */;
+			buildConfigurationList = 60849A6D249861380027DBDC /* Build configuration list for PBXNativeTarget "My-PixabayUITests" */;
 			buildPhases = (
 				60849A5A249861380027DBDC /* Sources */,
 				60849A5B249861380027DBDC /* Frameworks */,
@@ -176,9 +190,9 @@
 			dependencies = (
 				60849A60249861380027DBDC /* PBXTargetDependency */,
 			);
-			name = "My-ShutterstockUITests";
+			name = "My-PixabayUITests";
 			productName = "My-ShutterstockUITests";
-			productReference = 60849A5E249861380027DBDC /* My-ShutterstockUITests.xctest */;
+			productReference = 60849A5E249861380027DBDC /* My-PixabayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 60849A37249861370027DBDC /* Build configuration list for PBXProject "My-Shutterstock" */;
+			buildConfigurationList = 60849A37249861370027DBDC /* Build configuration list for PBXProject "My-Pixabay" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +231,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60849A3B249861370027DBDC /* My-Shutterstock */,
-				60849A52249861380027DBDC /* My-ShutterstockTests */,
-				60849A5D249861380027DBDC /* My-ShutterstockUITests */,
+				60849A3B249861370027DBDC /* My-Pixabay */,
+				60849A52249861380027DBDC /* My-PixabayTests */,
+				60849A5D249861380027DBDC /* My-PixabayUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60849A762499C8C90027DBDC /* LandingPageViewController.swift in Sources */,
 				60849A42249861370027DBDC /* ViewController.swift in Sources */,
-				60849A48249861370027DBDC /* My_Shutterstock.xcdatamodeld in Sources */,
+				60849A48249861370027DBDC /* My_Pixabay.xcdatamodeld in Sources */,
+				60849A722498A25B0027DBDC /* Pixabay.swift in Sources */,
 				60849A40249861370027DBDC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60849A58249861380027DBDC /* My_ShutterstockTests.swift in Sources */,
+				60849A58249861380027DBDC /* My_PixabayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60849A63249861380027DBDC /* My_ShutterstockUITests.swift in Sources */,
+				60849A63249861380027DBDC /* My_PixabayUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		60849A55249861380027DBDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 60849A3B249861370027DBDC /* My-Shutterstock */;
+			target = 60849A3B249861370027DBDC /* My-Pixabay */;
 			targetProxy = 60849A54249861380027DBDC /* PBXContainerItemProxy */;
 		};
 		60849A60249861380027DBDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 60849A3B249861370027DBDC /* My-Shutterstock */;
+			target = 60849A3B249861370027DBDC /* My-Pixabay */;
 			targetProxy = 60849A5F249861380027DBDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -426,12 +442,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VT88Q2XM7;
-				INFOPLIST_FILE = "My-Shutterstock/Info.plist";
+				INFOPLIST_FILE = "My-Pixabay/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-Shutterstock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-Pixabay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,12 +460,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VT88Q2XM7;
-				INFOPLIST_FILE = "My-Shutterstock/Info.plist";
+				INFOPLIST_FILE = "My-Pixabay/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-Shutterstock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-Pixabay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,7 +489,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My-Shutterstock.app/My-Shutterstock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My-Pixabay.app/My-Pixabay";
 			};
 			name = Debug;
 		};
@@ -494,7 +510,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My-Shutterstock.app/My-Shutterstock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My-Pixabay.app/My-Pixabay";
 			};
 			name = Release;
 		};
@@ -541,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		60849A37249861370027DBDC /* Build configuration list for PBXProject "My-Shutterstock" */ = {
+		60849A37249861370027DBDC /* Build configuration list for PBXProject "My-Pixabay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60849A65249861380027DBDC /* Debug */,
@@ -550,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60849A67249861380027DBDC /* Build configuration list for PBXNativeTarget "My-Shutterstock" */ = {
+		60849A67249861380027DBDC /* Build configuration list for PBXNativeTarget "My-Pixabay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60849A68249861380027DBDC /* Debug */,
@@ -559,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60849A6A249861380027DBDC /* Build configuration list for PBXNativeTarget "My-ShutterstockTests" */ = {
+		60849A6A249861380027DBDC /* Build configuration list for PBXNativeTarget "My-PixabayTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60849A6B249861380027DBDC /* Debug */,
@@ -568,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60849A6D249861380027DBDC /* Build configuration list for PBXNativeTarget "My-ShutterstockUITests" */ = {
+		60849A6D249861380027DBDC /* Build configuration list for PBXNativeTarget "My-PixabayUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60849A6E249861380027DBDC /* Debug */,
@@ -580,13 +596,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		60849A46249861370027DBDC /* My_Shutterstock.xcdatamodeld */ = {
+		60849A46249861370027DBDC /* My_Pixabay.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				60849A47249861370027DBDC /* My_Shutterstock.xcdatamodel */,
 			);
 			currentVersion = 60849A47249861370027DBDC /* My_Shutterstock.xcdatamodel */;
-			path = My_Shutterstock.xcdatamodeld;
+			path = My_Pixabay.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
