@@ -12,12 +12,13 @@ class ViewController: UIViewController {
 
     //MARK: - PROPERTIES
     var tempListLength = 0
-    
     var imageArray = [UIImage]()
+    var recentSearch = [String]()
     
     var searchKeyWord: String!
     
     let searchBar = UISearchBar()
+    let tableView = UITableView()
     let stackView = UIStackView()
     let collectionViewFlowLayout = UICollectionViewFlowLayout()
     var collectionView: UICollectionView!
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
         title = "My Pixabay"
         
         setupSearchBar()
+        setupTableView()
         setupCollectionView()
         setupStackView()
     }
@@ -40,6 +42,13 @@ class ViewController: UIViewController {
         searchBar.placeholder = "Search image here"
         
         searchBar.delegate = self
+    }
+    
+    func setupTableView() {
+        tableView.isHidden = true
+        
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
     func setupCollectionView() {
@@ -60,6 +69,7 @@ class ViewController: UIViewController {
         stackView.axis = .vertical
         
         stackView.addArrangedSubview(searchBar)
+        stackView.addArrangedSubview(tableView)
         stackView.addArrangedSubview(collectionView)
         
         setStackViewConstraints()
@@ -79,6 +89,7 @@ class ViewController: UIViewController {
         let urlString = "https://pixabay.com/api/?key=14449233-0835cd87d298a8be472fd70bc&q=\(searchKeyWord)&image_type=photo&pretty=true"
         
         guard let url = URL(string: urlString) else {return}
+        searchBar.isUserInteractionEnabled = false
         
         let request = URLRequest(url: url)
         
@@ -105,6 +116,7 @@ class ViewController: UIViewController {
                 print("imageArray: \(self.imageArray)")
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
+                    self.searchBar.isUserInteractionEnabled = true
                 }
             }
             completion()
@@ -116,14 +128,26 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UISearchBarDelegate {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        tableView.isHidden = false
+        print(recentSearch)
+    }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("Search button clicked")
+        
+        tableView.isHidden = true
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
         
         searchBar.resignFirstResponder()
         imageArray.removeAll()
         tempListLength = 0
         
         guard let searchKey = searchBar.text else {return}
+        recentSearch.append(searchKey)
         
         searchKeyWord = searchKey.replacingOccurrences(of: " ", with: "+")
         print(searchKeyWord!)
@@ -134,8 +158,25 @@ extension ViewController: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        tableView.isHidden = true
         searchBar.resignFirstResponder()
     }
+}
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return recentSearch.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        
+        cell.textLabel?.text = recentSearch[indexPath.row]
+        
+        return cell
+    }
+    
+    
 }
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
