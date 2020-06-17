@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     //MARK: - PROPERTIES
     var tempListLength = 0
     var imageArray = [UIImage]()
-    var recentSearch = [String]()
     
     var recentSearchRealm = [RecentSearchRealm]()
     
@@ -23,9 +22,9 @@ class ViewController: UIViewController {
     let searchBar = UISearchBar()
     let activityIndicator = UIActivityIndicatorView()
     let tableView = UITableView()
-    let stackView = UIStackView()
     let collectionViewFlowLayout = UICollectionViewFlowLayout()
     var collectionView: UICollectionView!
+    let stackView = UIStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +39,7 @@ class ViewController: UIViewController {
         setupStackView()
         
         //Print path realm file
-        print(Realm.Configuration.defaultConfiguration.fileURL)
-        
-        print("recentSearchRealm: \(recentSearchRealm)")
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -85,8 +82,6 @@ class ViewController: UIViewController {
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "PixabayCell")
         collectionView.backgroundColor = .black
         
-        //collectionView.isHidden = true
-        
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -95,9 +90,7 @@ class ViewController: UIViewController {
         view.addSubview(stackView)
         
         stackView.axis = .vertical
-        //stackView.distribution = .fillEqually
-        
-        //stackView.addArrangedSubview(searchBar)
+    
         stackView.addArrangedSubview(tableView)
         stackView.addArrangedSubview(collectionView)
         
@@ -138,19 +131,33 @@ class ViewController: UIViewController {
         }
     }
     
+    func showTableView() {
+        tableView.isHidden = false
+    }
+    
+    func hideTableView() {
+        tableView.isHidden = true
+    }
+    
+    func showCollectionView() {
+        collectionView.alpha = 1
+    }
+    
+    func hideCollectionView() {
+        collectionView.alpha = 0
+    }
+    
     func fetchPixabayData(searchKeyWord: String, completion: @escaping () -> Void) {
         DispatchQueue.main.async {
+            self.hideCollectionView()
             self.activityIndicator.startAnimating()
-            //self.collectionView.isHidden = true
-            self.collectionView.alpha = 0
         }
         
         let urlString = "https://pixabay.com/api/?key=14449233-0835cd87d298a8be472fd70bc&q=\(searchKeyWord)&image_type=photo&pretty=true"
         
         guard let url = URL(string: urlString) else {return}
+        
         searchBar.isUserInteractionEnabled = false
-        
-        
         
         let request = URLRequest(url: url)
         
@@ -171,17 +178,14 @@ class ViewController: UIViewController {
                         self.imageArray.append(UIImage(data: newData)!)
                         print("newData: \(newData)")
                     }
-                    
-                    
                 }
                 print("imageArray: \(self.imageArray)")
                 self.readRealmData()
+                
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
-                    //self.collectionView.reloadData()
-                    //self.collectionView.isHidden = false
-                    self.collectionView.alpha = 1
                     self.collectionView.reloadData()
+                    self.showCollectionView()
                     self.activityIndicator.stopAnimating()
                     self.searchBar.isUserInteractionEnabled = true
                 }
@@ -193,24 +197,13 @@ class ViewController: UIViewController {
     }
     
     func searchDataFromHistory(dataToSearch: String) {
-        tableView.isHidden = true
-        
-        DispatchQueue.main.async {
-            //self.collectionView.isHidden = true
-            self.tableView.reloadData()
-        }
-        
+        hideTableView()
         searchBar.resignFirstResponder()
         imageArray.removeAll()
         tempListLength = 0
         
         let recentSearchRealm = RecentSearchRealm()
         recentSearchRealm.searchWord = dataToSearch
-        
-//        let realm = try! Realm()
-//        try! realm.write {
-//            realm.add(recentSearchRealm)
-//        }
         
         searchKeyWord = dataToSearch.replacingOccurrences(of: " ", with: "+")
         
@@ -224,25 +217,17 @@ class ViewController: UIViewController {
 extension ViewController: UISearchBarDelegate {
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         readRealmData()
-        tableView.isHidden = false
-        print(recentSearch)
+        showTableView()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("Search button clicked")
-        
-        tableView.isHidden = true
-        
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-        
+        hideTableView()
         searchBar.resignFirstResponder()
+        
         imageArray.removeAll()
         tempListLength = 0
         
         guard let searchKey = searchBar.text else {return}
-        //recentSearch.append(searchKey)
         
         let recentSearchRealm = RecentSearchRealm()
         recentSearchRealm.searchWord = searchKey
@@ -253,7 +238,6 @@ extension ViewController: UISearchBarDelegate {
         }
         
         searchKeyWord = searchKey.replacingOccurrences(of: " ", with: "+")
-        print(searchKeyWord!)
         
         fetchPixabayData(searchKeyWord: searchKeyWord) {
             print("done fetching")
@@ -261,32 +245,26 @@ extension ViewController: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        tableView.isHidden = true
+        hideTableView()
         searchBar.resignFirstResponder()
     }
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return recentSearch.count
         return recentSearchRealm.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
-        //cell.textLabel?.text = recentSearch[indexPath.row]
         cell.textLabel?.text = recentSearchRealm[indexPath.row].searchWord
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(recentSearchRealm[indexPath.row].searchWord)
-        
         guard let dataToSearch = recentSearchRealm[indexPath.row].searchWord else {return}
-        
-        //let dataToSearch = recentSearchRealm[indexPath.row].searchWord
         
         searchDataFromHistory(dataToSearch: dataToSearch)
         
