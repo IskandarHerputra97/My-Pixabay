@@ -1,0 +1,6 @@
+framework module Pods_My_Pixabay_My_PixabayUITests {
+  umbrella header "Pods-My-Pixabay-My-PixabayUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
