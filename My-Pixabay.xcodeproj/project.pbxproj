@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02EC657FEA060640E15716A6 /* Pods_My_Pixabay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746A80B005BDD387C1CDD9BD /* Pods_My_Pixabay.framework */; };
+		5DFEC41FB1656EDDEF39C1BA /* Pods_My_PixabayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A2C2A602B860D5DC0FB60D /* Pods_My_PixabayTests.framework */; };
 		60849A40249861370027DBDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A3F249861370027DBDC /* AppDelegate.swift */; };
 		60849A42249861370027DBDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A41249861370027DBDC /* ViewController.swift */; };
 		60849A48249861370027DBDC /* My_Pixabay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60849A46249861370027DBDC /* My_Pixabay.xcdatamodeld */; };
@@ -16,6 +18,7 @@
 		60849A63249861380027DBDC /* My_PixabayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A62249861380027DBDC /* My_PixabayUITests.swift */; };
 		60849A722498A25B0027DBDC /* Pixabay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A712498A25B0027DBDC /* Pixabay.swift */; };
 		60849A762499C8C90027DBDC /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60849A752499C8C80027DBDC /* LandingPageViewController.swift */; };
+		AAA07355AEBF3FC1247F0421 /* Pods_My_Pixabay_My_PixabayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A899EF0C47FCFA02BE8E4 /* Pods_My_Pixabay_My_PixabayUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A2C2A602B860D5DC0FB60D /* Pods_My_PixabayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_PixabayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5089F106EBC3ABDBA785501A /* Pods-My-PixabayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My-PixabayTests.release.xcconfig"; path = "Target Support Files/Pods-My-PixabayTests/Pods-My-PixabayTests.release.xcconfig"; sourceTree = "<group>"; };
 		60849A3C249861370027DBDC /* My-Pixabay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-Pixabay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60849A3F249861370027DBDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60849A41249861370027DBDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		60849A64249861380027DBDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60849A712498A25B0027DBDC /* Pixabay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixabay.swift; sourceTree = "<group>"; };
 		60849A752499C8C80027DBDC /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		6C77D84E7EBA425BA8E452B6 /* Pods-My-Pixabay-My-PixabayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My-Pixabay-My-PixabayUITests.release.xcconfig"; path = "Target Support Files/Pods-My-Pixabay-My-PixabayUITests/Pods-My-Pixabay-My-PixabayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		746A80B005BDD387C1CDD9BD /* Pods_My_Pixabay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Pixabay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F02B0B075539272726BD78 /* Pods-My-Pixabay-My-PixabayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My-Pixabay-My-PixabayUITests.debug.xcconfig"; path = "Target Support Files/Pods-My-Pixabay-My-PixabayUITests/Pods-My-Pixabay-My-PixabayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FFDF8660665C9356969F4EE /* Pods-My-Pixabay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My-Pixabay.release.xcconfig"; path = "Target Support Files/Pods-My-Pixabay/Pods-My-Pixabay.release.xcconfig"; sourceTree = "<group>"; };
+		CE9F000BC0EE7B5C9553B718 /* Pods-My-PixabayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My-PixabayTests.debug.xcconfig"; path = "Target Support Files/Pods-My-PixabayTests/Pods-My-PixabayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2DE069BC6268F3F14E94BA0 /* Pods-My-Pixabay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My-Pixabay.debug.xcconfig"; path = "Target Support Files/Pods-My-Pixabay/Pods-My-Pixabay.debug.xcconfig"; sourceTree = "<group>"; };
+		F53A899EF0C47FCFA02BE8E4 /* Pods_My_Pixabay_My_PixabayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Pixabay_My_PixabayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EC657FEA060640E15716A6 /* Pods_My_Pixabay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DFEC41FB1656EDDEF39C1BA /* Pods_My_PixabayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA07355AEBF3FC1247F0421 /* Pods_My_Pixabay_My_PixabayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				60849A56249861380027DBDC /* My-PixabayTests */,
 				60849A61249861380027DBDC /* My-PixabayUITests */,
 				60849A3D249861370027DBDC /* Products */,
+				ECA6262C4A98D1E8FECF646E /* Pods */,
+				A137CC5F84B1C17768C90014 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +156,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A137CC5F84B1C17768C90014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				746A80B005BDD387C1CDD9BD /* Pods_My_Pixabay.framework */,
+				F53A899EF0C47FCFA02BE8E4 /* Pods_My_Pixabay_My_PixabayUITests.framework */,
+				00A2C2A602B860D5DC0FB60D /* Pods_My_PixabayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECA6262C4A98D1E8FECF646E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2DE069BC6268F3F14E94BA0 /* Pods-My-Pixabay.debug.xcconfig */,
+				9FFDF8660665C9356969F4EE /* Pods-My-Pixabay.release.xcconfig */,
+				92F02B0B075539272726BD78 /* Pods-My-Pixabay-My-PixabayUITests.debug.xcconfig */,
+				6C77D84E7EBA425BA8E452B6 /* Pods-My-Pixabay-My-PixabayUITests.release.xcconfig */,
+				CE9F000BC0EE7B5C9553B718 /* Pods-My-PixabayTests.debug.xcconfig */,
+				5089F106EBC3ABDBA785501A /* Pods-My-PixabayTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60849A67249861380027DBDC /* Build configuration list for PBXNativeTarget "My-Pixabay" */;
 			buildPhases = (
+				A953CA1823B37EF97242DBAD /* [CP] Check Pods Manifest.lock */,
 				60849A38249861370027DBDC /* Sources */,
 				60849A39249861370027DBDC /* Frameworks */,
 				60849A3A249861370027DBDC /* Resources */,
+				0E06C87F9A16E6226B27FEF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60849A6A249861380027DBDC /* Build configuration list for PBXNativeTarget "My-PixabayTests" */;
 			buildPhases = (
+				C5C58E08720DE41594F12ADB /* [CP] Check Pods Manifest.lock */,
 				60849A4F249861380027DBDC /* Sources */,
 				60849A50249861380027DBDC /* Frameworks */,
 				60849A51249861380027DBDC /* Resources */,
@@ -181,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60849A6D249861380027DBDC /* Build configuration list for PBXNativeTarget "My-PixabayUITests" */;
 			buildPhases = (
+				DAB683C6E9B458BD94A730F5 /* [CP] Check Pods Manifest.lock */,
 				60849A5A249861380027DBDC /* Sources */,
 				60849A5B249861380027DBDC /* Frameworks */,
 				60849A5C249861380027DBDC /* Resources */,
+				9878B701ECEFF3F03A0073DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +309,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E06C87F9A16E6226B27FEF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My-Pixabay/Pods-My-Pixabay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My-Pixabay/Pods-My-Pixabay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My-Pixabay/Pods-My-Pixabay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9878B701ECEFF3F03A0073DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My-Pixabay-My-PixabayUITests/Pods-My-Pixabay-My-PixabayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My-Pixabay-My-PixabayUITests/Pods-My-Pixabay-My-PixabayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My-Pixabay-My-PixabayUITests/Pods-My-Pixabay-My-PixabayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A953CA1823B37EF97242DBAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My-Pixabay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C58E08720DE41594F12ADB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My-PixabayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB683C6E9B458BD94A730F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My-Pixabay-My-PixabayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60849A38249861370027DBDC /* Sources */ = {
@@ -438,6 +587,7 @@
 		};
 		60849A68249861380027DBDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2DE069BC6268F3F14E94BA0 /* Pods-My-Pixabay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +606,7 @@
 		};
 		60849A69249861380027DBDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FFDF8660665C9356969F4EE /* Pods-My-Pixabay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -474,6 +625,7 @@
 		};
 		60849A6B249861380027DBDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9F000BC0EE7B5C9553B718 /* Pods-My-PixabayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +647,7 @@
 		};
 		60849A6C249861380027DBDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5089F106EBC3ABDBA785501A /* Pods-My-PixabayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +669,7 @@
 		};
 		60849A6E249861380027DBDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F02B0B075539272726BD78 /* Pods-My-Pixabay-My-PixabayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +690,7 @@
 		};
 		60849A6F249861380027DBDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C77D84E7EBA425BA8E452B6 /* Pods-My-Pixabay-My-PixabayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
